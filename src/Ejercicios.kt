@@ -109,3 +109,11 @@ fun reto9() {
     }
 }
 
+fun reto10() {
+    val empleados = listOf("A", "B", "C", "D")
+
+    val rotado = empleados.drop(1) + empleados.first()
+
+    println(rotado)
+}
+
