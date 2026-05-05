@@ -312,3 +312,22 @@ fun reto28() {
 
     fun calcular(horas: Int) = tarifas[horas] ?: horas * 10
 }
+
+fun reto29() {
+    val pesos = listOf(2,3,4,5,6)
+
+    val target = 8
+
+    val pares = mutableListOf<Pair<Int,Int>>()
+
+    for (i in pesos.indices) {
+        for (j in i+1 until pesos.size) {
+            if (pesos[i] + pesos[j] == target) {
+                pares.add(pesos[i] to pesos[j])
+            }
+        }
+    }
+
+    println(pares)
+}
+
