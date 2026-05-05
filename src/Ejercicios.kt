@@ -215,3 +215,12 @@ fun reto19() {
 
     println(ranking)
 }
+
+fun reto20() {
+    val a = listOf("Ana", "Carlos")
+    val b = listOf("Bea", "David")
+
+    val union = (a + b).distinct()
+
+    println(union)
+}
