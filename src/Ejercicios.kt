@@ -195,3 +195,15 @@ fun reto17() {
     println(diag1)
     println(diag2)
 }
+
+fun reto18() {
+    val r1 = mapOf("azucar" to 1.0, "harina" to 2.0)
+    val r2 = mapOf("azucar" to 0.5, "leche" to 1.0)
+
+    val fusion = mutableMapOf<String, Double>()
+
+    for ((k,v) in r1) fusion[k] = v
+    for ((k,v) in r2) fusion[k] = fusion.getOrDefault(k,0.0) + v
+
+    println(fusion)
+}
