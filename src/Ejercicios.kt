@@ -175,3 +175,23 @@ fun reto16() {
 
     println(sensores)
 }
+
+fun reto17() {
+    val matriz = arrayOf(
+        arrayOf(1,2,3,4),
+        arrayOf(5,6,7,8),
+        arrayOf(9,10,11,12),
+        arrayOf(13,14,15,16)
+    )
+
+    var diag1 = 0
+    var diag2 = 0
+
+    for (i in matriz.indices) {
+        diag1 += matriz[i][i]
+        diag2 += matriz[i][matriz.size - 1 - i]
+    }
+
+    println(diag1)
+    println(diag2)
+}
