@@ -167,3 +167,11 @@ fun reto15() {
 
     println(conIVA)
 }
+
+fun reto16() {
+    val sensores = mutableListOf(3,6,7,9,10)
+
+    sensores.removeAll { it % 3 == 0 }
+
+    println(sensores)
+}
