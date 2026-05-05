@@ -98,3 +98,14 @@ fun reto8() {
 
     println(final)
 }
+
+fun reto9() {
+    fun traducir(codigo: String): String {
+        return when (codigo) {
+            "ISO" -> "Colombia"
+            "USA" -> "Estados Unidos"
+            else -> "Desconocido"
+        }
+    }
+}
+
