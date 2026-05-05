@@ -257,3 +257,12 @@ fun reto23() {
 
     println(resultado)
 }
+
+fun reto24() {
+    val abiertos = listOf("A", "B")
+    val cerrados = listOf("C")
+
+    val manifiesto = abiertos + cerrados
+
+    println(manifiesto)
+}
