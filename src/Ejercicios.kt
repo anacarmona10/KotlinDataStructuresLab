@@ -30,3 +30,11 @@ fun reto2() {
 
     println(resultado)
 }
+
+fun reto3() {
+    val telefonos = listOf(123, 456, 123, 789, 456)
+
+    val unicos = telefonos.toSet().sorted()
+
+    println(unicos)
+}
