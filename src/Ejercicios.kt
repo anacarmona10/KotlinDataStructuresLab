@@ -117,3 +117,19 @@ fun reto10() {
     println(rotado)
 }
 
+fun reto11() {
+    val objetos = listOf("camisa" to 1.0, "zapatos" to 2.0)
+
+    val limite = 5.0
+    var total = 0.0
+    val seleccion = mutableListOf<String>()
+
+    for ((obj, peso) in objetos) {
+        if (total + peso <= limite) {
+            seleccion.add(obj)
+            total += peso
+        }
+    }
+
+    println(seleccion)
+}
