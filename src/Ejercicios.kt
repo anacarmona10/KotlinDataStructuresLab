@@ -142,3 +142,10 @@ fun reto12() {
     println(esSimetrica)
 }
 
+fun reto13() {
+    val paquetes = (1..50).toList()
+
+    val grupos = paquetes.chunked(10)
+
+    println(grupos)
+}
