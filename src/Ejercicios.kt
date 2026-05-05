@@ -238,3 +238,9 @@ fun reto21() {
     println(dias)
 }
 
+fun reto22() {
+    val pila = mutableListOf<String>()
+
+    pila.add("plato1") // push
+    pila.removeLast()  // pop
+}
