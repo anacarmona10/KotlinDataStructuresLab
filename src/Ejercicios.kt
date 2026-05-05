@@ -149,3 +149,13 @@ fun reto13() {
 
     println(grupos)
 }
+
+fun reto14() {
+    val ids = listOf(1,2,2,3,3,4,4)
+
+    val unico = ids.groupBy { it }
+        .filter { it.value.size == 1 }
+        .keys
+
+    println(unico)
+}
