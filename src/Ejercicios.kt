@@ -38,3 +38,15 @@ fun reto3() {
 
     println(unicos)
 }
+
+fun reto4() {
+    val productos = listOf("pan", "leche", "pan", "huevos")
+
+    val conteo = mutableMapOf<String, Int>()
+
+    for (p in productos) {
+        conteo[p] = conteo.getOrDefault(p, 0) + 1
+    }
+
+    println(conteo)
+}
