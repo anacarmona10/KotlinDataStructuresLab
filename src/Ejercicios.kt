@@ -331,3 +331,19 @@ fun reto29() {
     println(pares)
 }
 
+fun reto30() {
+    val matriz = arrayOf(
+        arrayOf(1,2,3),
+        arrayOf(4,5,6)
+    )
+
+    val transpuesta = Array(3) { Array(2) {0} }
+
+    for (i in matriz.indices) {
+        for (j in matriz[0].indices) {
+            transpuesta[j][i] = matriz[i][j]
+        }
+    }
+
+    println(transpuesta.map { it.toList() })
+}
