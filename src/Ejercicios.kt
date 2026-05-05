@@ -207,3 +207,11 @@ fun reto18() {
 
     println(fusion)
 }
+
+fun reto19() {
+    val estudiantes = listOf("Ana" to 4.5, "Luis" to 3.8)
+
+    val ranking = estudiantes.sortedByDescending { it.second }
+
+    println(ranking)
+}
