@@ -159,3 +159,11 @@ fun reto14() {
 
     println(unico)
 }
+
+fun reto15() {
+    val precios = mapOf("arroz" to 1000, "leche" to 2000)
+
+    val conIVA = precios.mapValues { it.value * 1.19 }
+
+    println(conIVA)
+}
