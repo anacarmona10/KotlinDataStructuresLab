@@ -133,3 +133,12 @@ fun reto11() {
 
     println(seleccion)
 }
+
+fun reto12() {
+    val ruta = listOf("A", "B", "C", "B", "A")
+
+    val esSimetrica = ruta == ruta.reversed()
+
+    println(esSimetrica)
+}
+
