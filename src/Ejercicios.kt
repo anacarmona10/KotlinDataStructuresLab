@@ -50,3 +50,26 @@ fun reto4() {
 
     println(conteo)
 }
+
+fun reto5() {
+    val historial = arrayOf("a", "b", "c", "d")
+
+    val invertido = Array(historial.size) { "" }
+
+    for (i in historial.indices) {
+        invertido[i] = historial[historial.size - 1 - i]
+    }
+
+    println(invertido.toList())
+}
+
+fun reto6() {
+    val p1 = setOf("cine", "musica", "deporte")
+    val p2 = setOf("musica", "arte")
+
+    val comunes = p1.intersect(p2)
+    val unicos = p1.subtract(p2)
+
+    println(comunes)
+    println(unicos)
+}

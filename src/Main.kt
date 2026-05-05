@@ -6,5 +6,7 @@ fun main () {
     reto2()
     reto3()
     reto4()
+    reto5()
+    reto6()
 
 }
