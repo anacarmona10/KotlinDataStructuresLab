@@ -73,3 +73,17 @@ fun reto6() {
     println(comunes)
     println(unicos)
 }
+
+fun reto7() {
+    val inventario = mutableMapOf("pan" to 2, "leche" to 1)
+
+    val producto = "pan"
+
+    inventario[producto]?.let {
+        if (it > 1) inventario[producto] = it - 1
+        else inventario.remove(producto)
+    }
+
+    println(inventario)
+}
+
