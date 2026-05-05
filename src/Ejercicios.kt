@@ -87,3 +87,14 @@ fun reto7() {
     println(inventario)
 }
 
+fun reto8() {
+    val notas = listOf(4.0 to 0.3, 3.5 to 0.3, 5.0 to 0.4)
+
+    var final = 0.0
+
+    for ((nota, peso) in notas) {
+        final += nota * peso
+    }
+
+    println(final)
+}
