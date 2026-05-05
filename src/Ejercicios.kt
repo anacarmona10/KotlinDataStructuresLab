@@ -244,3 +244,16 @@ fun reto22() {
     pila.add("plato1") // push
     pila.removeLast()  // pop
 }
+
+fun reto23() {
+    val calorias = listOf(2000, 2100, 1900, 2200)
+
+    val resultado = mutableListOf<Double>()
+
+    for (i in calorias.indices) {
+        val promedio = calorias.take(i).average()
+        resultado.add(if (i == 0) 0.0 else calorias[i] - promedio)
+    }
+
+    println(resultado)
+}
