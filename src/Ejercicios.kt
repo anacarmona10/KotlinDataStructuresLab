@@ -297,3 +297,12 @@ fun reto26() {
 
     println(comprimido)
 }
+
+fun reto27() {
+    val ventas = listOf("Ana" to 1000, "Ana" to 2000, "Luis" to 500)
+
+    val promedio = ventas.groupBy { it.first }
+        .mapValues { it.value.map { v -> v.second }.average() }
+
+    println(promedio)
+}
