@@ -306,3 +306,9 @@ fun reto27() {
 
     println(promedio)
 }
+
+fun reto28() {
+    val tarifas = mapOf(1 to 10.0, 2 to 18.0)
+
+    fun calcular(horas: Int) = tarifas[horas] ?: horas * 10
+}
