@@ -266,3 +266,13 @@ fun reto24() {
 
     println(manifiesto)
 }
+
+fun reto25() {
+    val tiempos = listOf(10, 12, 9, 15, 8)
+
+    val limpio = tiempos.sorted().drop(1).dropLast(1)
+
+    val promedio = limpio.average()
+
+    println(promedio)
+}
