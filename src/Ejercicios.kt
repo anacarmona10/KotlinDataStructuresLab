@@ -21,4 +21,12 @@ fun reto1() {
     println("Menor: $min")
 }
 
-fun reto2() {}
+fun reto2() {
+    val empleados = listOf("Ana" to 25, "Luis" to 35, "Carlos" to 40)
+
+    val resultado = empleados
+        .filter { it.second > 30 }
+        .map { it.first.uppercase() }
+
+    println(resultado)
+}
